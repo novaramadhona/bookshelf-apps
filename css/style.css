@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+label,
+input,
+button,
+p {
+  font-size: 14px;
+}
+
+.head_bar {
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  background-color: #00b8d9;
+  color: white;
+  line-height: 20px;
+}
+
+.search form label {
+  margin-right: 10px;
+}
+
+.search form input {
+  border-radius: 2px;
+  border: 0;
+  font-size: 14px;
+  padding: 6px;
+  width: 50%;
+}
+
+.search form button {
+  background-color: rgb(213, 216, 221);
+  color: white;
+  border-radius: 2px;
+  border: 0;
+  cursor: pointer;
+  padding: 5px 25px;
+  margin-left: 10px;
+}
+
+.search form button:hover {
+  background-color: rgb(190, 190, 190);
+}
+
+.container {
+  display: flex;
+  padding: 15px;
+  justify-content: space-around;
+  background-color: #d1d1d1;
+  align-items: flex-start;
+  width: 90%;
+  margin: 30px auto;
+  border-radius: 5px;
+}
+
+.input_section {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.13);
+  border-radius: 5px;
+  margin: 18px;
+  background-color: white;
+  width: 30%;
+}
+
+.input_section h2,
+.bookShelf h2 {
+  text-align: center;
+  color: #0098b3;
+  font-size: 21px;
+}
+
+.input_section form {
+  padding: 3px 0 11px;
+}
+
+.input_section form .input {
+  margin: 5px 0;
+}
+
+.input_section form button {
+  background-color: #0098b3;
+  color: white;
+  border: 0;
+  border-radius: 3px;
+  display: block;
+  width: 100%;
+  padding: 6px;
+  cursor: pointer;
+}
+
+.input_section form button:hover {
+  background-color: #1c658c;
+}
+
+.input_section form .input input {
+  display: block;
+  width: 100%;
+  padding: 6px;
+  border-radius: 4px;
+}
+
+.input_section form .input_inline {
+  margin: 12px 0;
+  display: flex;
+  align-items: center;
+}
+
+.input_section form .input_inline label {
+  margin-right: 10px;
+}
+
+.bookShelf {
+  margin: 18px;
+  box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.13);
+  padding: 16px;
+  border-radius: 5px;
+  background-color: white;
+  width: 30%;
+}
+
+.bookShelf .book_list {
+  padding: 3px;
+}
+
+.bookShelf .book_list .book_item {
+  padding: 8px 15px 15px;
+  border: 1px solid #0098b3;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+.bookShelf .book_list .book_item button {
+  border: 0;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 3px;
+  cursor: pointer;
+  color: white;
+  width: 110px;
+}
+
+.bookShelf .book_list .book_item .green {
+  background-color: #65c18c;
+}
+
+.bookShelf .book_list .book_item .green:hover {
+  background-color: #139487;
+}
+
+.bookShelf .book_list .book_item .red {
+  background-color: #ef6d6d;
+}
+
+.bookShelf .book_list .book_item .red:hover {
+  background-color: #fc4f4f;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .input_section,
+  .bookShelf {
+    width: 100%;
+  }
+
+  .head_bar {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .head_bar_title {
+    margin-bottom: 15px;
+  }
+}
